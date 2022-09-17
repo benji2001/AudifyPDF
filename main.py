@@ -1,7 +1,8 @@
 import pyttsx3
 import PyPDF2
 
-book = open('demo.pdf','rb')
+pdfdocument = input("Please insert PDF document you would like to be read: ")
+book = open(pdfdocument,'rb')
 pdf_reader = PyPDF2.PdfFileReader(book)
 num_pages = pdf_reader.numPages
 
